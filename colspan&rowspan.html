@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Produk</title>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffeef5, #ffd6e8);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 800px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(255, 182, 193, 0.5);
+      background: white;
+    }
+
+    th {
+      background: #f8c8dc;
+      color: #6b2d5c;
+      font-size: 26px;
+      padding: 15px;
+      letter-spacing: 2px;
+    }
+
+    td {
+      border: 2px solid #f3a6c0;
+      padding: 12px;
+      vertical-align: top;
+    }
+
+    .image-cell {
+      background: #fff0f6;
+      text-align: center;
+      width: 220px;
+    }
+
+    .image-cell img {
+      width: 170px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(255,182,193,0.4);
+    }
+
+    .label {
+      background: #ffd6e8;
+      font-weight: bold;
+      color: #8a3d6b;
+      width: 150px;
+    }
+
+    .content {
+      background: #ffe4f0;
+      color: #5a2a4d;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* Button Back */
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #f8c8dc;
+      color: #6b2d5c;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 5px 10px rgba(255,182,193,0.4);
+    }
+
+    .back-btn:hover {
+      background: #f3a6c0;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <!-- Judul -->
+    <tr>
+      <th colspan="3">DAFTAR PRODUK</th>
+    </tr>
+
+    <!-- Nama -->
+    <tr>
+      <td class="image-cell" rowspan="3">
+        <img src="https://th.bing.com/th/id/OIP.oE6jI9Df5tL9Qfiw9ZGRXwHaGy?w=184&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Canon EOS M10">
+      </td>
+
+      <td class="label">Nama Produk</td>
+      <td class="content">Canon EOS M10 Kit EF-M 15-45mm</td>
+    </tr>
+
+    <!-- Harga -->
+    <tr>
+      <td class="label">Harga</td>
+      <td class="content">Rp 4.899.000</td>
+    </tr>
+
+    <!-- Fitur -->
+    <tr>
+      <td class="label">Fitur Produk</td>
+      <td class="content">
+        <ul>
+          <li>Kamera mirrorless</li>
+          <li>Efektifitas Piksel: 18 MP</li>
+          <li>Tipe sensor: CMOS DIGIC 6</li>
+          <li>Layar: 3.0 Inch</li>
+          <li>Flash hingga 5 meter</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Button Back -->
+  <button class="back-btn" onclick="goBack()">← Back</button>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
